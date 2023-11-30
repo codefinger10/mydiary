@@ -1,11 +1,11 @@
 import React from 'react'
 import { Center } from '../styles/center'
 
-const Main = () => {
+const Main = ({children}) => {
   return (
-    <Center>
-    중심 컨텐츠
-    </Center>
+    <>
+    {children}
+    </>
   )
 }
 

@@ -10,8 +10,9 @@ export const TopBar = styled.header`
   gap: 6px;
   flex-shrink: 0;
   background: #fef7ff;
+  
   h2 {
     font-weight: 400;
+    color: ${props => props.color};
   }
-
 `;

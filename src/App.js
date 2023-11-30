@@ -1,23 +1,29 @@
 import "./styles/App.css";
 import React from 'react';
-import Header from "./components/Header";
-import Bot from "./components/Bot";
-import Main from "./components/Main";
+import Intro from "./pages/Intro";
+import Index from "./pages/Index";
+import DiaryIndex from "./pages/diary/Index"
+import DiaryAdd from "./pages/diary/DiaryAdd";
+import DiaryEdit from "./pages/diary/DiaryEdit";
+import First from "./pages/First";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+
 
 
 function App() {
 
 
 
-  return ( <div className="layout">
-              <div className="wrap">
-                <Header/>
-                <Main/>
-                <Bot/>
-              </div>
-            </div>
-  );
-
+  return ( 
+    <>
+          <Intro>  </Intro>
+          <Index></Index>
+          <DiaryIndex></DiaryIndex>
+          <DiaryAdd></DiaryAdd>
+          <DiaryEdit></DiaryEdit>
+          <First></First>
+    </>
+  )
 }
 
 export default App;
